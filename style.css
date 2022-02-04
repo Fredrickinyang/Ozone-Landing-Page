@@ -191,6 +191,9 @@ H E A D E R
         .overview {
             bottom: -19rem;
         }
+        .header__text {
+            padding: 3rem 0 1.5rem 0;
+        }
     }
     @media (max-width:798px) {
         .overview {
@@ -214,7 +217,7 @@ A B O U T  -  U S
 
 .aboutImages {
     position: relative;
-    height: 510px
+    height: 590px
 }
 
 .about__dots {
@@ -229,7 +232,7 @@ A B O U T  -  U S
 
 .about__underlay {
     position: absolute;
-    top: 3rem;
+    top: 7.5rem;
 }
 
 .about__underlay__image {
@@ -243,7 +246,7 @@ A B O U T  -  U S
     position: absolute;
     z-index: 30;
     left: 18rem;
-    top: 17rem;
+    top: 21rem;
     /* right: 0 */
 }
 
@@ -267,7 +270,7 @@ A B O U T  -  U S
 
 .about__info {
     color: var(--green);
-    height: 510px;
+    height: 590px;
     font-family: inherit;
 }
 
@@ -282,7 +285,7 @@ A B O U T  -  U S
 }
 
 .about__info hr {
-    margin: 5rem 0 0 0;
+    margin: 8rem 0 0 0;
     color: #686868
 }
 
