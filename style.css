@@ -1,0 +1,470 @@
+:root {
+    --green: #42806B;
+    --orange: #E8B32B;
+}
+
+.padX {
+    padding: 70px 70px;
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+
+/* 
+NAVIGATION LINKS
+*/
+
+nav {
+    align-items: center;
+}
+
+#checkbox {
+    display: none;
+}
+
+.checkbox-label {
+    display: none;
+}
+
+.bars {
+    display: none;
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-container li {
+    margin: 0 0 0 15px;
+}
+
+.nav-container a {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.request-demu-btn {
+    background-color: var(--green);
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+}
+
+@media (max-width: 951px) {
+    .checkbox-label {
+        display: block;
+    }
+    .nav-ul {
+        position: absolute;
+        z-index: 111;
+        left: -100%;
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid var(--green);
+        width: 100%;
+        border-radius: 0 5px 5px 0;
+        line-height: 3rem;
+        text-align: center;
+    }
+    .nav-ul li {
+        display: block;
+    }
+    .nav-ul li:hover {
+        background-color: #d6d6d6;
+    }
+    #checkbox:checked~.nav-ul {
+        left: -4rem;
+        transition: .3s;
+    }
+}
+
+
+/* 
+
+H E A D E R
+
+*/
+
+.header {
+    background-image: url(/images/Family\ photos\,\ Couple\ with\ baby.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px
+}
+
+.header__text {
+    color: var(--green);
+    padding: 7rem 0 3rem 0;
+}
+
+.header__select__div {
+    color: var(--green);
+}
+
+.header__select__div p {
+    margin: 0;
+}
+
+.header__select__div input {
+    margin: 0 0 0 -4px;
+    background-color: var(--green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 19px;
+    border-radius: 0 8px 8px 0;
+    font-size: 13px
+}
+
+#services {
+    padding: 10px;
+    font-size: 10px 6px;
+    border-radius: 8px 0 0 8px;
+    width: 16rem;
+    border: none;
+    color: var(--green);
+    font-size: 13px
+}
+
+.overview {
+    width: 90%;
+    bottom: -4rem;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 25px;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.umbrella-icon,
+.wallet-icon,
+.check-icon {
+    font-size: 60px;
+    color: var(--green);
+    /* opacity: 0.5; */
+}
+
+@media (max-width:1169px) {
+    .overview {
+        bottom: -8rem
+    }
+}
+
+@media (max-width:798px) {
+    .overview {
+        bottom: -17rem;
+        left: 1rem
+    }
+}
+
+@media (max-width:484px) {
+    .padX {
+        padding: 30px 30px;
+    }
+    .overview {
+        top: 29rem;
+    }
+    .header__text {
+        padding: 7rem 0 1.5rem 0;
+    }
+    @media (max-width:408px) {
+        #services {
+            border-radius: 8px;
+        }
+        .header__select__div input {
+            border-radius: 8px;
+            margin: 10px 0 0 0;
+        }
+        .overview {
+            bottom: -19rem;
+        }
+    }
+    @media (max-width:798px) {
+        .overview {
+            bottom: -25rem
+        }
+    }
+}
+
+
+/* 
+
+A B O U T  -  U S
+
+*/
+
+.about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5rem 0;
+}
+
+.aboutImages {
+    position: relative;
+    height: 510px
+}
+
+.about__dots {
+    font-size: 50px;
+    margin: 0 0 0 -2.5rem;
+}
+
+.about__dots p {
+    line-height: .3rem;
+    color: var(--green);
+}
+
+.about__underlay {
+    position: absolute;
+    top: 3rem;
+}
+
+.about__underlay__image {
+    border-radius: 10px;
+    height: 350px;
+    width: 280px;
+    z-index: 20;
+}
+
+.about__overlay {
+    position: absolute;
+    z-index: 30;
+    left: 18rem;
+    top: 17rem;
+    /* right: 0 */
+}
+
+.about__overlay__image {
+    height: 195px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.about__client__feedback {
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px 0px 70px 1px rgba(7, 18, 31, 0.432);
+}
+
+.about__client__image {
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 15px 0 0;
+}
+
+.about__info {
+    color: var(--green);
+    height: 510px;
+    font-family: inherit;
+}
+
+.button {
+    background-color: var(--green);
+    width: 9rem;
+    border-radius: 8px;
+    height: 3rem;
+    color: #ffffff;
+    border: none;
+    margin: 1.5rem 0 0 0;
+}
+
+.about__info hr {
+    margin: 5rem 0 0 0;
+    color: #686868
+}
+
+.angle {
+    color: var(--green);
+    padding: 0 15px 0 0;
+    font-size: 30px;
+}
+
+@media(max-width:1169px) {
+    .about {
+        margin: 10rem 0 0 0;
+    }
+}
+
+@media(max-width:855px) {
+    .about {
+        display: block;
+        margin: 5rem 0;
+        /* bottom: 5rem; */
+    }
+    .about__info {
+        margin: 5rem 0 0rem 0;
+    }
+    .about__info hr {
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media(max-width:855px) {
+    .about {
+        margin: 12rem 0 0 0;
+    }
+}
+
+@media(max-width:798px) {
+    .about {
+        margin: 17rem 0 0 0;
+    }
+}
+
+@media(max-width:485px) {
+    .about__overlay {
+        left: 12rem;
+        top: 17rem;
+        /* right: 0 */
+    }
+    .about__underlay__image {
+        border-radius: 10px;
+        height: 350px;
+        width: 280px;
+        z-index: 20;
+    }
+}
+
+@media(max-width:486px) {
+    .about__dots {
+        margin: 0 0 0 -.5rem;
+    }
+    .about__underlay {
+        left: 2rem
+    }
+}
+
+@media(max-width:484px) {
+    .about {
+        margin: 25rem 0 0 0;
+    }
+}
+
+@media(max-width:390px) {
+    .about__overlay {
+        left: 8rem;
+        top: 17rem;
+        /* right: 0 */
+    }
+    .aboutImages {
+        height: 560px
+    }
+}
+
+
+/* 
+
+ S T A T I S T I C S
+
+*/
+
+.statistics {
+    background-color: #21806027;
+    color: var(--green);
+}
+
+.statistics__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.statistics a {
+    color: var(--green);
+}
+
+.stat__hr {
+    background-color: var(--orange);
+}
+
+.barchart__container {
+    position: relative;
+    width: 500px;
+}
+
+.barcharts {
+    position: absolute;
+    left: 17rem;
+}
+
+.bar1__container,
+.bar2__container,
+.bar3__container {
+    position: absolute;
+    bottom: 0;
+}
+
+.bar2__container {
+    left: 6rem;
+}
+
+.bar3__container {
+    left: 12rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 3rem;
+    background-color: var(--green);
+}
+
+.bar1 {
+    height: 5rem;
+}
+
+.bar2 {
+    height: 8rem;
+    left: 5rem;
+}
+
+.bar3 {
+    height: 11rem;
+}
+
+@media (max-width:1237px) {
+    .statistics {
+        margin: 13rem 0 0 0;
+    }
+}
+
+@media (max-width:1146px) {
+    .statistics__container {
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width:1100px) {
+    .statistics__container {
+        display: block;
+    }
+    .barchart__container {
+        top: 2.5rem;
+        width: unset
+    }
+}
+
+@media (max-width:610px) {
+    .barcharts {
+        position: unset;
+        left: 17rem;
+    }
+    .barchart__container {
+        height: 30rem;
+    }
+    .stat__hr {
+        display: none
+    }
+}
+
+@media (max-width:348px) {
+    .statistics {
+        margin: 20rem 0 0 0;
+    }
+}
